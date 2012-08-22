@@ -1,0 +1,5 @@
+#ignoring Mvn target and Eclipse project directories/files
+target/
+.settings/
+.classpath
+.project

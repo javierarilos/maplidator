@@ -1,0 +1,110 @@
+{
+	"customer": 
+		{
+	       "country": "IT",
+	       "email": "filbrun@asd.com",
+	       "firstName": "filippo",
+	       "language": "it",
+	       "lastName": "bruno",
+	       "monetaryDataAccess": true,
+	       "organizationId": "customer-Jtest136c489f9f6kwjC4EuzV4913",
+	       "phone": "",
+	       "role": "admin",
+	       "status": "pending",
+	       "timezone": "Europe/Madrid",
+	       "userName": "user88888",
+	       "id": "4fa29ca2386fd0894f000000"
+		},
+    "organization": 
+    	{
+	       "type": "purchaser",
+	       "id": "1369c623323fN9iZCxnpx6wi",
+	       "name": "Acme",
+	       "description": "Wiki wack Organization. Yes, it is a easter egg. Don't think more about that.",
+	       "status": "1",
+	       "defaultLanguage": "es",
+	       "commercialName": "Acme inc.",
+	       "brand": "Acme",
+	       "companyAddress":
+	       {
+	           "line1": "C/ Oca 4",
+	           "line2": "",
+	           "city": "Madrid",
+	           "state": "Madrid",
+	           "country": "ES",
+	           "postalCode": "87654321"
+	       },
+	       "primaryContact":
+	       {
+	           "firstName": "Service",
+	           "lastName": "Provider",
+	           "phone": "765432845",
+	           "email": "milo@acme.es",
+	           "mobile": "876532633"
+	       },
+	       "billingAddressIsCompanyAddress": true,
+	       "billingAddress":
+	       {
+	           "line1": "C/ Oca 4",
+	           "line2": "",
+	           "city": "Madrid",
+	           "state": "Madrid",
+	           "country": "ES",
+	           "postalCode": "87654321"
+	       },
+	       "shippingAddressIsCompanyAddress": true,
+	       "shippingAddress":
+	       {
+	           "line1": "C/ Oca 4",
+	           "line2": "",
+	           "city": "Madrid",
+	           "state": "Madrid",
+	           "country": "ES",
+	           "postalCode": "87654321"
+	       },
+	       "customFieldName_1": "field1",
+	       "customFieldName_2": "field2",
+	       "customFieldName_3": "field3",
+	       "customFieldName_4": "field4",
+	       "parentId": "master-Master1369c5bc475fDyik8qrqNC28P7",
+	       "GGSNProvisioning": true,
+	       "pluralSIMProvisioning": true
+	    },
+	  "order":
+		  [
+		   		{
+		   			"product": 
+		   				{
+		   					"name": "eggs",
+		   					"price": 0.75
+		   				},
+		   			"quantity": 12
+		   		},
+		   		{
+		   			"product": 
+		   				{
+		   					"name": "tomato",
+		   					"price": 0.3
+		   				},
+		   			"quantity": 5
+		   		},
+		   		{
+		   			"product": 
+		   				{
+		   					"name": "pepper",
+		   					"price": 0.32
+		   				},
+		   			"quantity": 1
+		   		},
+		   		{
+		   			"product": 
+		   				{
+		   					"name": "onion",
+		   					"price": 0.21
+		   				},
+		   			"quantity": 1
+		   		}
+		  ],
+		 "discount": 10
+	   
+}
