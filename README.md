@@ -17,19 +17,25 @@ The idea is to have a very simple, easy to use, dummy-proof, self descriptive va
 Usage Example
 -------------
 Lets suposse we read our Json from a file and want to validate it:
-        InputStream is = SimpleAuthorizer.class.getClassLoader().getResourceAsStream("json/invoice.json");
-        ObjectMapper mapper = new ObjectMapper(); // can reuse, share globally
-        mapper.configure(Feature.ALLOW_COMMENTS, true);
-        Map<String, Object> data = mapper.readValue(is, Map.class);
-        validateLoginData(data);
+
+    InputStream is = String.class.getClassLoader().getResourceAsStream("json/invoice.json");
+    ObjectMapper mapper = new ObjectMapper(); // can reuse, share globally
+    mapper.configure(Feature.ALLOW_COMMENTS, true);
+    Map<String, Object> data = mapper.readValue(is, Map.class);
+    validateLoginData(data);
 
 Using MapLidator the validateLoginData(Map<String, Object> data) method would look like:
-        private void validateLoginData(Map<String, Object> data) {
-          //login data must contain fields: user, permissions and organization
-          MapLidator.validate(data, "customer", OBJECT, NOT_NULL);
-          MapLidator.validate(data, "organization.companyAddress", OBJECT, NOT_NULL);
-          MapLidator.validate(data, "customer.firstName", STRING, NOT_NULL, STRING_NOT_EMPTY);
-          MapLidator.validate(data, "order", ARRAY, NOT_NULL);
-        }
+
+    private void validateInvoiceData(Map<String, Object> data) {
+      //invoice data must contain fields: customer, order and organization
+      MapLidator.validate(data, "customer", OBJECT, NOT_NULL);
+      MapLidator.validate(data, "organization.companyAddress", OBJECT, NOT_NULL);
+      MapLidator.validate(data, "customer.firstName", STRING, NOT_NULL, STRING_NOT_EMPTY);
+      MapLidator.validate(data, "order", ARRAY, NOT_NULL);
+    }
+
+How to use it
+-------------
+Is just one class inside a Maven project... Use it the way it pleases you. Any comments, improvements, etc will be very wellcome.
 
  
